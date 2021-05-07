@@ -15,7 +15,7 @@ for line in docOpen:
         pass
     else:
         position = str(line).replace("Mouse moved to", "").replace(",","")
-        mouse.position = (int(position.split(" ")[1]), int(position.split(" ")[2]))
+        mouse.position = (int(position.split(" ")[2]), int(position.split(" ")[3]))
         if review_speed == "quick":
             time.sleep(0.0001)
         elif review_speed == "normal":
